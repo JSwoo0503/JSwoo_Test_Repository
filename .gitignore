@@ -1,0 +1,18 @@
+# no .o files
+*.o
+
+#no .d files
+*.d
+
+#ignore DebugRel derectory
+DebugRel/
+
+# no .a files
+*.a
+
+# no vs setting file
+*.vscode
+*.json
+
+#temp.s
+temp.s

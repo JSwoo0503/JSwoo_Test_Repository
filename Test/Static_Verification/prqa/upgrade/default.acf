@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<acf>
+  <toolchains>
+    <toolchain>
+      <target_languages>
+        <language target="C"/>
+      </target_languages>
+      <components>
+        <component name="qac" version="9.6.0">
+        </component>
+      </components>
+    </toolchain>
+    <toolchain>
+      <target_languages>
+        <language target="C++"/>
+      </target_languages>
+      <components>
+        <component name="qacpp" version="4.4.0">
+        </component>
+      </components>
+    </toolchain>
+  </toolchains>
+</acf>

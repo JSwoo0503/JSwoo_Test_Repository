@@ -1,0 +1,1136 @@
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\bl1\aarch32\ASM.h
+<S>STNAM ASM_DCACHE_FLUSH
+<S>STM29 3
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\bl1\aarch32\ASM.h
+<S>STNAM ASM_PC_JUMP
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SCU\Drv_SCU.c
+<S>STNAM NC_AXI2APB_TZPC_EN
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\ncLib\Stdlib.c
+<S>STNAM NC_Abort_Handler
+<S>STM29 0
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\boot\boot_config.c
+<S>STNAM NC_BootConfig
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\boot\boot_eMMC.c
+<S>STNAM NC_Boot_EMMC_DeInitialize
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\boot\boot_eMMC.c
+<S>STNAM NC_Boot_EMMC_GetHeader
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\boot\boot_eMMC.c
+<S>STNAM NC_Boot_EMMC_GetImage
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\boot\boot_eMMC.c
+<S>STNAM NC_Boot_EMMC_ImageLoading
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\boot\boot_eMMC.c
+<S>STNAM NC_Boot_EMMC_Initialize
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\boot\boot_SD.c
+<S>STNAM NC_Boot_SD
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\boot\boot_SD.c
+<S>STNAM NC_Boot_SD_DeInitialize
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\boot\boot_SD.c
+<S>STNAM NC_Boot_SD_GetHeader
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\boot\boot_SD.c
+<S>STNAM NC_Boot_SD_GetImage
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\boot\boot_SD.c
+<S>STNAM NC_Boot_SD_ImageLoading
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\boot\boot_SD.c
+<S>STNAM NC_Boot_SD_Initialize
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\boot\boot_UART.c
+<S>STNAM NC_Boot_UART
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\boot\boot_UART.c
+<S>STNAM NC_Boot_UART_Initialize
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\boot\boot_USB.c
+<S>STNAM NC_Boot_USB
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\boot\boot_USB.c
+<S>STNAM NC_Boot_USB_Initialize
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\boot\boot_eMMC.c
+<S>STNAM NC_Boot_eMMC
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\boot\boot_sFlash.c
+<S>STNAM NC_Boot_sFlash
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\boot\boot_config.c
+<S>STNAM NC_CheckHeader
+<S>STM29 4
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\ncLib\Stdlib.c
+<S>STNAM NC_Checksum
+<S>STM29 5
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\ncLib\Stdlib.c
+<S>STNAM NC_Compare
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\DMA\Drv_DMA330.c
+<S>STNAM NC_DMA_Deinit
+<S>STM29 2
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\DMA\Drv_DMA330.c
+<S>STNAM NC_DMA_Gen_microCode
+<S>STM29 2
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\DMA\Drv_DMA330.c
+<S>STNAM NC_DMA_Kill
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\DMA\Drv_DMA330.c
+<S>STNAM NC_DMA_QSPI_Gen_Instruction
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\DMA\Drv_DMA330.c
+<S>STNAM NC_DMA_Run
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\DMA\Drv_DMA330.c
+<S>STNAM NC_DMA_SPI_Gen_Instruction
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\DMA\Drv_DMA330.c
+<S>STNAM NC_DMA_Start
+<S>STM29 2
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\DMA\Drv_DMA330.c
+<S>STNAM NC_DMA_Wait_Ch_Complete
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\DMA\Drv_DMA330.c
+<S>STNAM NC_DMA_Wait_Complete
+<S>STM29 2
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB_Core.c
+<S>STNAM NC_DWC3_Read
+<S>STM29 18
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB_Core.c
+<S>STNAM NC_DWC3_Write
+<S>STM29 16
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\boot\boot_config.c
+<S>STNAM NC_DefaultConfig
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\EMMC\Drv_EMMC.c
+<S>STNAM NC_EMMC_CheckCMDLineWork
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\EMMC\Drv_EMMC.c
+<S>STNAM NC_EMMC_CheckClkStable
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\EMMC\Drv_EMMC.c
+<S>STNAM NC_EMMC_CheckDATLineWork
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\EMMC\Drv_EMMC.c
+<S>STNAM NC_EMMC_DeInit
+<S>STM29 2
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\EMMC\Drv_EMMC.c
+<S>STNAM NC_EMMC_EnableMultiBlkSelect
+<S>STM29 2
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\EMMC\Drv_EMMC.c
+<S>STNAM NC_EMMC_GetFreqDiv
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\EMMC\Drv_EMMC.c
+<S>STNAM NC_EMMC_Initialize
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\EMMC\Drv_EMMC.c
+<S>STNAM NC_EMMC_IntrADMAErr
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\EMMC\Drv_EMMC.c
+<S>STNAM NC_EMMC_PrepareADMA2Descriptor
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\EMMC\Drv_EMMC.c
+<S>STNAM NC_EMMC_Read2DummyBuffer
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\EMMC\Drv_EMMC.c
+<S>STNAM NC_EMMC_ReadByADMA2
+<S>STM29 2
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\EMMC\Drv_EMMC.c
+<S>STNAM NC_EMMC_ReadByFIFO
+<S>STM29 2
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\EMMC\Drv_EMMC.c
+<S>STNAM NC_EMMC_ResetDevice
+<S>STM29 2
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\EMMC\Drv_EMMC.c
+<S>STNAM NC_EMMC_SetClock
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\EMMC\Drv_EMMC.c
+<S>STNAM NC_EMMC_SetSkipSizeAndBlkCount
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\EMMC\Drv_EMMC.c
+<S>STNAM NC_EMMC_Wait_INT
+<S>STM29 2
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\EMMC\Drv_EMMC.c
+<S>STNAM NC_EMMC_waitForCMDLineWork
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\EMMC\Drv_EMMC.c
+<S>STNAM NC_EMMC_waitForClockStatble
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\EMMC\Drv_EMMC.c
+<S>STNAM NC_EMMC_waitForDATLineWork
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB_Core.c
+<S>STNAM NC_Endpoint_Interrupt_Handler
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\bl1\main.c
+<S>STNAM NC_GetBootInfo
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\OTP\Drv_OTP.c
+<S>STNAM NC_GetDBG_OTP_Config
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\OTP\Drv_OTP.c
+<S>STNAM NC_Get_Firmware_Backup_Offset
+<S>STM29 6
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\ncLib\Stdlib.c
+<S>STNAM NC_Gpio_toggle
+<S>STM29 6
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\ICU\Drv_ICU.c
+<S>STNAM NC_ICU_GetPadInfo
+<S>STM29 2
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\ICU\Drv_ICU.c
+<S>STNAM NC_ICU_Initialize
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\ICU\Drv_ICU.c
+<S>STNAM NC_ICU_SetDriveStrength
+<S>STM29 2
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\ICU\Drv_ICU.c
+<S>STNAM NC_ICU_SetDriveStrengthPadControl
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\ICU\Drv_ICU.c
+<S>STNAM NC_ICU_SetPinLevel
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\ICU\Drv_ICU.c
+<S>STNAM NC_ICU_SetPinMode
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\ICU\Drv_ICU.c
+<S>STNAM NC_ICU_SetPinMux
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\boot\boot_config.c
+<S>STNAM NC_IMGConfig
+<S>STM29 6
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\boot\boot_config.c
+<S>STNAM NC_IMGConfig_OTP1
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\boot\boot_config.c
+<S>STNAM NC_IMGConfig_OTP2
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SCU\Drv_SCU.c
+<S>STNAM NC_InitReset
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\boot\load_IMG.c
+<S>STNAM NC_LD_JumpImage
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\safety\MPU\MPU.c
+<S>STNAM NC_MPU_EnableDebugRegion
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\safety\MPU\MPU.c
+<S>STNAM NC_MPU_EnterSafetyGate
+<S>STM29 20
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\safety\MPU\MPU_ASM.h
+<S>STNAM NC_MPU_GET_REGION_AREA
+<S>STM29 3
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\safety\MPU\MPU.c
+<S>STNAM NC_MPU_LeaveSafetyGate
+<S>STM29 20
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\safety\MPU\MPU_ASM.h
+<S>STNAM NC_MPU_SET_REGION_DEBUG_DATA_SECTION
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\safety\MPU\MPU_ASM.h
+<S>STNAM NC_MPU_SET_REGION_DEBUG_SECTION
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\safety\MPU\MPU_ASM.h
+<S>STNAM NC_MPU_SET_REGION_SAFETY_ENGINE_TXT
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\safety\MPU\MPU.c
+<S>STNAM NC_MPU_SetRegion
+<S>STM29 3
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\ncLib\Stdlib.c
+<S>STNAM NC_Memcpy_u08
+<S>STM29 5
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\ncLib\Stdlib.c
+<S>STNAM NC_Memset_u08
+<S>STM29 12
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\OTP\Drv_OTP.c
+<S>STNAM NC_OTP_Config
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SCU\Drv_SCU.c
+<S>STNAM NC_PMU_BlockPowerON
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\ncLib\Stdlib.c
+<S>STNAM NC_Prefetch_Handler
+<S>STM29 0
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SPI\Drv_SPI.c
+<S>STNAM NC_QSPI_Init
+<S>STM29 2
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SPI\Drv_SPI.c
+<S>STNAM NC_QSPI_Read
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SPI\Drv_SPI.c
+<S>STNAM NC_QSPI_SetBitRate
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SPI\Drv_SPI.c
+<S>STNAM NC_QSPI_Write
+<S>STM29 2
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\ncLib\SWC_Secure_RT640\rt640_hlos.c
+<S>STNAM NC_SB_BringUp
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\ncLib\SWC_Secure_RT640\rt640_hlos.c
+<S>STNAM NC_SB_CMRT_IORead32
+<S>STM29 6
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\ncLib\SWC_Secure_RT640\rt640_hlos.c
+<S>STNAM NC_SB_CMRT_IOWrite32
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\ncLib\SWC_Secure_RT640\rt640_interface.c
+<S>STNAM NC_SB_CMRT_Initialize
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\ncLib\SWC_Secure_RT640\rt640_interface.c
+<S>STNAM NC_SB_CMRT_Secure_Run
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\ncLib\SWC_Secure_RT640\rt640_interface.c
+<S>STNAM NC_SB_CMRT_Swap
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\ncLib\SWC_Secure_RT640\rt640_hlos.c
+<S>STNAM NC_SB_CPU_Sram_Check
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\ncLib\SWC_Secure_RT640\rt640_hlos.c
+<S>STNAM NC_SB_Check_CMRT_Reg
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\ncLib\SWC_Secure_RT640\rt640_hlos.c
+<S>STNAM NC_SB_Check_SW_Boot_Status
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\ncLib\SWC_Secure_RT640\rt640_hlos.c
+<S>STNAM NC_SB_Check_Scratch_Reg
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\ncLib\SWC_Secure_RT640\rt640_hlos.c
+<S>STNAM NC_SB_GetTimeOverCount
+<S>STM29 3
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\ncLib\SWC_Secure_RT640\rt640_hlos.c
+<S>STNAM NC_SB_GetTimeOverEnable
+<S>STM29 3
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\ncLib\SWC_Secure_RT640\rt640_hlos.c
+<S>STNAM NC_SB_Hold_Reset
+<S>STM29 2
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\ncLib\SWC_Secure_RT640\rt640_hlos.c
+<S>STNAM NC_SB_Init_Param
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\ncLib\SWC_Secure_RT640\rt640_hlos.c
+<S>STNAM NC_SB_ReadByte_CMRT_Reg
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\ncLib\SWC_Secure_RT640\rt640_hlos.c
+<S>STNAM NC_SB_Request_Decrypt_Service
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\ncLib\SWC_Secure_RT640\rt640_hlos.c
+<S>STNAM NC_SB_Wait_Cycles
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SCU\Drv_SCU.c
+<S>STNAM NC_SCU_GetClk
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SCU\Drv_SCU.c
+<S>STNAM NC_SCU_GetMsec
+<S>STM29 6
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SCU\Drv_SCU.c
+<S>STNAM NC_SCU_GetPLL
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SCU\Drv_SCU.c
+<S>STNAM NC_SCU_GetTick
+<S>STM29 3
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SCU\Drv_SCU.c
+<S>STNAM NC_SCU_Initialize
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SCU\Drv_SCU.c
+<S>STNAM NC_SCU_POR_HoldReset
+<S>STM29 2
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SCU\Drv_SCU.c
+<S>STNAM NC_SCU_POR_ReleaseReset
+<S>STM29 2
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SCU\Drv_SCU.c
+<S>STNAM NC_SCU_SetHSPClk
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SCU\Drv_SCU.c
+<S>STNAM NC_SCU_SetPeriClk
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SCU\Drv_SCU.c
+<S>STNAM NC_SCU_SetSysClk
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SCU\Drv_SCU.c
+<S>STNAM NC_SCU_StrapConfig
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SCU\Drv_SCU.c
+<S>STNAM NC_SCU_USB_EnableClock
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SCU\Drv_SCU.c
+<S>STNAM NC_SCU_USB_PowerAndSetClk
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SCU\Drv_SCU.c
+<S>STNAM NC_SCU_WaitTick
+<S>STM29 12
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SCU\Drv_SCU.c
+<S>STNAM NC_SCU_mTimeOut
+<S>STM29 24
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SDC\Drv_SDC.c
+<S>STNAM NC_SDC_ACMD41
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SDC\Drv_SDC.c
+<S>STNAM NC_SDC_ACMD6
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SDC\Drv_SDC.c
+<S>STNAM NC_SDC_CMD0
+<S>STM29 2
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SDC\Drv_SDC.c
+<S>STNAM NC_SDC_CMD16
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SDC\Drv_SDC.c
+<S>STNAM NC_SDC_CMD17
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SDC\Drv_SDC.c
+<S>STNAM NC_SDC_CMD2
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SDC\Drv_SDC.c
+<S>STNAM NC_SDC_CMD3
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SDC\Drv_SDC.c
+<S>STNAM NC_SDC_CMD55
+<S>STM29 2
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SDC\Drv_SDC.c
+<S>STNAM NC_SDC_CMD7
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SDC\Drv_SDC.c
+<S>STNAM NC_SDC_CMD8
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SDC\Drv_SDC.c
+<S>STNAM NC_SDC_CheckCMDLineWork
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SDC\Drv_SDC.c
+<S>STNAM NC_SDC_CheckClkStable
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SDC\Drv_SDC.c
+<S>STNAM NC_SDC_CheckDATLineWork
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SDC\Drv_SDC.c
+<S>STNAM NC_SDC_DeInit
+<S>STM29 3
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SDC\Drv_SDC.c
+<S>STNAM NC_SDC_GetFreqDiv
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SDC\Drv_SDC.c
+<S>STNAM NC_SDC_Init
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SDC\Drv_SDC.c
+<S>STNAM NC_SDC_Read
+<S>STM29 2
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SDC\Drv_SDC.c
+<S>STNAM NC_SDC_SetClock
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SDC\Drv_SDC.c
+<S>STNAM NC_SDC_waitForCMDLineWork
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SDC\Drv_SDC.c
+<S>STNAM NC_SDC_waitForClockStatble
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SDC\Drv_SDC.c
+<S>STNAM NC_SDC_waitForDATLineWork
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\safety\SE\safety_engine.c
+<S>STNAM NC_SE_Initialize
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\safety\SE\safety_engine.c
+<S>STNAM NC_SE_NotifyFailure
+<S>STM29 14
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\safety\SE\safety_engine.c
+<S>STNAM NC_SE_SetFaultInfo
+<S>STM29 12
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\boot\boot_sFlash.c
+<S>STNAM NC_SF_ChangeCtrlModeAndImgType
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\boot\boot_sFlash.c
+<S>STNAM NC_SF_CheckClockDiv
+<S>STM29 3
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\boot\boot_sFlash.c
+<S>STNAM NC_SF_CheckNormalImageFault
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\boot\boot_sFlash.c
+<S>STNAM NC_SF_CheckQSPIBitRate
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\boot\boot_sFlash.c
+<S>STNAM NC_SF_CheckSPIBitRate
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\boot\boot_sFlash.c
+<S>STNAM NC_SF_ClearCtrlModeRetryMask
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SPI\Svc_sFlash.c
+<S>STNAM NC_SF_DMA_QSPI_ReadData
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SPI\Svc_sFlash.c
+<S>STNAM NC_SF_DMA_SPI_ReadData
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SPI\Svc_sFlash.c
+<S>STNAM NC_SF_DeInit
+<S>STM29 2
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SPI\Svc_sFlash.c
+<S>STNAM NC_SF_EnableDeviceQuadMode
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SPI\Svc_sFlash.c
+<S>STNAM NC_SF_EnableQuadMode
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SPI\Svc_sFlash.c
+<S>STNAM NC_SF_EnableQuadMode_Type
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\boot\boot_sFlash.c
+<S>STNAM NC_SF_GetHeader
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\boot\boot_sFlash.c
+<S>STNAM NC_SF_GetImage
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\boot\boot_sFlash.c
+<S>STNAM NC_SF_ImageLoading
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SPI\Svc_sFlash.c
+<S>STNAM NC_SF_Init
+<S>STM29 2
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\boot\boot_sFlash.c
+<S>STNAM NC_SF_Initialize
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\boot\boot_sFlash.c
+<S>STNAM NC_SF_ModifyDebugSummarySPIMode
+<S>STM29 2
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SPI\Svc_sFlash.c
+<S>STNAM NC_SF_QSPI_ReadData
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SPI\Svc_sFlash.c
+<S>STNAM NC_SF_ReadConfigStatus
+<S>STM29 2
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SPI\Svc_sFlash.c
+<S>STNAM NC_SF_ReadData
+<S>STM29 3
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SPI\Svc_sFlash.c
+<S>STNAM NC_SF_ReadID
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SPI\Svc_sFlash.c
+<S>STNAM NC_SF_ReadStatus
+<S>STM29 4
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SPI\Svc_sFlash.c
+<S>STNAM NC_SF_ReadStatus2
+<S>STM29 2
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\boot\boot_sFlash.c
+<S>STNAM NC_SF_RecordFaults
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SPI\Svc_sFlash.c
+<S>STNAM NC_SF_SPI_ReadData
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\boot\boot_sFlash.c
+<S>STNAM NC_SF_SetTargetBitrate
+<S>STM29 2
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\boot\boot_sFlash.c
+<S>STNAM NC_SF_SetTargetDivider
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SPI\Svc_sFlash.c
+<S>STNAM NC_SF_WriteConfigStatus
+<S>STM29 2
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SPI\Svc_sFlash.c
+<S>STNAM NC_SF_WriteDisable
+<S>STM29 5
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SPI\Svc_sFlash.c
+<S>STNAM NC_SF_WriteEnable
+<S>STM29 5
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SPI\Svc_sFlash.c
+<S>STNAM NC_SF_WriteStatus
+<S>STM29 2
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SPI\Svc_sFlash.c
+<S>STNAM NC_SF_WriteStatus2
+<S>STM29 2
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SPI\Svc_sFlash.c
+<S>STNAM NC_SF_WriteStatus3
+<S>STM29 2
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SPI\Svc_sFlash.c
+<S>STNAM NC_SF_WriteStatus4
+<S>STM29 2
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\safety\SM\seq_monitor.c
+<S>STNAM NC_SM_CheckFlow
+<S>STM29 2
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\safety\SM\seq_monitor.c
+<S>STNAM NC_SM_CheckFlowSecureStep
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\safety\SM\seq_monitor.c
+<S>STNAM NC_SM_GetGoldenBootStep
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\safety\SM\seq_monitor.c
+<S>STNAM NC_SM_GetLastBootStep
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\safety\SM\seq_monitor.c
+<S>STNAM NC_SM_GetMediaRetryCnt
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\safety\SM\seq_monitor.c
+<S>STNAM NC_SM_Initialize
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\safety\SM\seq_monitor.c
+<S>STNAM NC_SM_SetBOOT_Result
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\safety\SM\seq_monitor.c
+<S>STNAM NC_SM_SetBOOT_SecureStep
+<S>STM29 4
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\safety\SM\seq_monitor.c
+<S>STNAM NC_SM_SetBOOT_Step
+<S>STM29 21
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\safety\SM\seq_monitor.c
+<S>STNAM NC_SM_SetBootStep
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\safety\SM\seq_monitor.c
+<S>STNAM NC_SM_SetRETRY_Count
+<S>STM29 2
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SPI\Drv_SPI.c
+<S>STNAM NC_SPI_DeInit
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SPI\Drv_SPI.c
+<S>STNAM NC_SPI_DisableCS
+<S>STM29 15
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SPI\Drv_SPI.c
+<S>STNAM NC_SPI_DisableDMAReq
+<S>STM29 2
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SPI\Drv_SPI.c
+<S>STNAM NC_SPI_EnableCS
+<S>STM29 15
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SPI\Drv_SPI.c
+<S>STNAM NC_SPI_EnableDMAReq
+<S>STM29 2
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SPI\Drv_SPI.c
+<S>STNAM NC_SPI_Init
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SPI\Drv_SPI.c
+<S>STNAM NC_SPI_Read
+<S>STM29 5
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SPI\Drv_SPI.c
+<S>STNAM NC_SPI_SetBitRate
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SPI\Drv_SPI.c
+<S>STNAM NC_SPI_SetDataLevel
+<S>STM29 2
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SPI\Drv_SPI.c
+<S>STNAM NC_SPI_SetFrameSize
+<S>STM29 2
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SPI\Drv_SPI.c
+<S>STNAM NC_SPI_SetTMOD
+<S>STM29 8
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SPI\Drv_SPI.c
+<S>STNAM NC_SPI_SetTransferLength
+<S>STM29 2
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SPI\Drv_SPI.c
+<S>STNAM NC_SPI_WaitBusIsBusy
+<S>STM29 8
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SPI\Drv_SPI.c
+<S>STNAM NC_SPI_WaitTxFIFOIsEmpty
+<S>STM29 4
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SPI\Drv_SPI.c
+<S>STNAM NC_SPI_Write
+<S>STM29 12
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SPI\Drv_SPI.c
+<S>STNAM NC_SPI_Write32
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SPI\Drv_SPI.c
+<S>STNAM NC_SPI_WriteDummy
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SCU\Drv_SCU.c
+<S>STNAM NC_SYS_SCU_TZPROT_EN
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\safety\SB\secure_boot.c
+<S>STNAM NC_Secure_Boot
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\OTP\Drv_OTP.c
+<S>STNAM NC_SetDBG_OTP_Config
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\ncLib\Stdlib.c
+<S>STNAM NC_SetDBG_STRAP_Config
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\UART\Drv_Uart.c
+<S>STNAM NC_UART_GetCharN
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\UART\Drv_Uart.c
+<S>STNAM NC_UART_GetLineStat
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\UART\Drv_Uart.c
+<S>STNAM NC_UART_Initialize
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\UART\Drv_Uart.c
+<S>STNAM NC_UART_PutChar
+<S>STM29 3
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB_Descriptor.c
+<S>STNAM NC_USB_Configuration_Descriptor
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB_Core.c
+<S>STNAM NC_USB_Core_Device_Reset
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB_Core.c
+<S>STNAM NC_USB_Core_Init
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB_Core.c
+<S>STNAM NC_USB_Core_Phy_Init
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB.c
+<S>STNAM NC_USB_DeviceFirmwareUpgrade
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB_Device.c
+<S>STNAM NC_USB_Device_Change_State
+<S>STM29 7
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB_Device.c
+<S>STNAM NC_USB_Device_Clear_Stall_All_Ep
+<S>STM29 2
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB_Device.c
+<S>STNAM NC_USB_Device_Connection_Done
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB_Descriptor.c
+<S>STNAM NC_USB_Device_Descriptor
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB_Device.c
+<S>STNAM NC_USB_Device_Disconnect
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB_Device.c
+<S>STNAM NC_USB_Device_Ep_Config
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB_Device.c
+<S>STNAM NC_USB_Device_Ep_Enable
+<S>STM29 2
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB_Core.c
+<S>STNAM NC_USB_Device_Event_Loop
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB_Descriptor.c
+<S>STNAM NC_USB_Device_Get_Apache6_Descriptor
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB_Descriptor.c
+<S>STNAM NC_USB_Device_Int2String
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB_Device.c
+<S>STNAM NC_USB_Device_Interrupt_Handler
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB_Device.c
+<S>STNAM NC_USB_Device_Link_Status_Change
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB_Device.c
+<S>STNAM NC_USB_Device_Reset
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB_Core.c
+<S>STNAM NC_USB_Device_Run
+<S>STM29 2
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB_Descriptor.c
+<S>STNAM NC_USB_Device_Set_Serial_No
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB_Descriptor.c
+<S>STNAM NC_USB_Device_Set_String
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB_Device.c
+<S>STNAM NC_USB_Device_Show_State
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB_Device.c
+<S>STNAM NC_USB_Device_Start
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB_Core.c
+<S>STNAM NC_USB_Enable_Interrupt
+<S>STM29 3
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB_Ep0.c
+<S>STNAM NC_USB_Ep0_Event
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB_Ep0.c
+<S>STNAM NC_USB_Ep0_Get_Descriptor
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB_Ep0.c
+<S>STNAM NC_USB_Ep0_Handle_Setup_Stage
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB_Ep0.c
+<S>STNAM NC_USB_Ep0_Handle_Stall
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB_Ep0.c
+<S>STNAM NC_USB_Ep0_Handle_XferNotReady
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB_Ep0.c
+<S>STNAM NC_USB_Ep0_Out_Start
+<S>STM29 3
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB_Ep0.c
+<S>STNAM NC_USB_Ep0_Prepare_Data_Phase
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB_Ep0.c
+<S>STNAM NC_USB_Ep0_Prepare_One_TRB
+<S>STM29 3
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB_Ep0.c
+<S>STNAM NC_USB_Ep0_Prepare_Status_Phase
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB_Ep0.c
+<S>STNAM NC_USB_Ep0_Process_Data_Transfer
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB_Ep0.c
+<S>STNAM NC_USB_Ep0_Send_Command
+<S>STM29 4
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB_Ep0.c
+<S>STNAM NC_USB_Ep0_Set_Address
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB_Ep0.c
+<S>STNAM NC_USB_Ep0_Set_Configuration
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB_Ep0.c
+<S>STNAM NC_USB_Ep0_Standard_Request
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB_Ep0.c
+<S>STNAM NC_USB_Ep0_Start_Transfer
+<S>STM29 3
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB_Ep0.c
+<S>STNAM NC_USB_Ep0_State_Transition
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB_Ep0.c
+<S>STNAM NC_USB_Ep0_Vendor_Request
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB_Core.c
+<S>STNAM NC_USB_Event_Buffer_Init
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB_Core.c
+<S>STNAM NC_USB_GCTL_Init
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB_Device.c
+<S>STNAM NC_USB_Init_Ep0_Desc
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB.c
+<S>STNAM NC_USB_Initialize
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB_Descriptor.c
+<S>STNAM NC_USB_Interface_Descriptor
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB.c
+<S>STNAM NC_USB_Phy_Init
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB_Descriptor.c
+<S>STNAM NC_USB_Prepare_Descriptor
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB_Device.c
+<S>STNAM NC_USB_Prepare_Endpoint
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB_Device.c
+<S>STNAM NC_USB_Process_Event_Buffer_Entry
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB_Core.c
+<S>STNAM NC_USB_Soft_Reset
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB_Core.c
+<S>STNAM NC_USB_Speed_Init
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\ncLib\Stdlib.c
+<S>STNAM NC_Undefined_Handler
+<S>STM29 0
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\UART\ymodem.c
+<S>STNAM NC_Ymodem_ATOI
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\UART\ymodem.c
+<S>STNAM NC_Ymodem_Check_RxPacket
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\UART\ymodem.c
+<S>STNAM NC_Ymodem_Get_ConsoleData
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\UART\ymodem.c
+<S>STNAM NC_Ymodem_RxErrHandler
+<S>STM29 2
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\UART\ymodem.c
+<S>STNAM NC_Ymodem_RxPacket
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\UART\ymodem.c
+<S>STNAM NC_Ymodem_crc16
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\UART\ymodem.c
+<S>STNAM NC_Ymodem_receive
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SDC\Drv_SDC.c
+<S>STNAM SD_WaitCMD
+<S>STM29 9
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SDC\Drv_SDC.c
+<S>STNAM SD_WaitCMD_DAT
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SDC\Drv_SDC.c
+<S>STNAM SD_Wait_INT
+<S>STM29 10
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\safety\SE\safety_engine.c
+<S>STNAM _sys_exit
+<S>STM29 1
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\bl1\main.c
+<S>STNAM main
+<S>STM29 0
+<S>
+<S>STFIL D:\1.PROJECT\38.Apache6\1.CODE\1.BL\Testing\01_static\01_coding_rules\prqa\configs\Initial\output\_SOURCE_ROOT\cma
+<S>STNAM D:\1.PROJECT\38.Apache6\1.CODE\1.BL\Testing\01_static\01_coding_rules\prqa\configs\Initial\output\_SOURCE_ROOT\cma
+<S>STCYA 951
+<S>STNEA 4
+<S>STNFA 275
+<S>STNGV 14
+<S>STNRA 0

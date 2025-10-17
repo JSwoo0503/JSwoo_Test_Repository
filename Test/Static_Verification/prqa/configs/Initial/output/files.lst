@@ -1,0 +1,49 @@
+-op D:\1.PROJECT\38.Apache6\1.CODE\1.BL\Testing\01_static\01_coding_rules\prqa\configs\Initial\output\SM-d41a20b3886863a7e4ca
+D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\safety\SM\seq_monitor.c
+-op D:\1.PROJECT\38.Apache6\1.CODE\1.BL\Testing\01_static\01_coding_rules\prqa\configs\Initial\output\SE-24a7b535d6152f95f001
+D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\safety\SE\safety_engine.c
+-op D:\1.PROJECT\38.Apache6\1.CODE\1.BL\Testing\01_static\01_coding_rules\prqa\configs\Initial\output\SB-72f029db89b373cdaaf6
+D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\safety\SB\secure_boot.c
+-op D:\1.PROJECT\38.Apache6\1.CODE\1.BL\Testing\01_static\01_coding_rules\prqa\configs\Initial\output\MPU-b7b8289a4151884fea88
+D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\safety\MPU\MPU.c
+-op D:\1.PROJECT\38.Apache6\1.CODE\1.BL\Testing\01_static\01_coding_rules\prqa\configs\Initial\output\SWC_Secure_RT640-5d721ab77a9410c2bbfa
+D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\ncLib\SWC_Secure_RT640\rt640_hlos.c
+D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\ncLib\SWC_Secure_RT640\rt640_interface.c
+-op D:\1.PROJECT\38.Apache6\1.CODE\1.BL\Testing\01_static\01_coding_rules\prqa\configs\Initial\output\ncLib-1f751234ab99aead7dc6
+D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\ncLib\Stdlib.c
+-op D:\1.PROJECT\38.Apache6\1.CODE\1.BL\Testing\01_static\01_coding_rules\prqa\configs\Initial\output\USB-6d2528f85b7e53d33c6c
+D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB.c
+D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB_Core.c
+D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB_Descriptor.c
+D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB_Device.c
+D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\USB\Drv_USB_Ep0.c
+-op D:\1.PROJECT\38.Apache6\1.CODE\1.BL\Testing\01_static\01_coding_rules\prqa\configs\Initial\output\UART-1c6399f2ac24f4939190
+D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\UART\Drv_Uart.c
+D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\UART\ymodem.c
+-op D:\1.PROJECT\38.Apache6\1.CODE\1.BL\Testing\01_static\01_coding_rules\prqa\configs\Initial\output\SPI-453ee39bb08509b8478d
+D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SPI\Drv_SPI.c
+D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SPI\Svc_sFlash.c
+-op D:\1.PROJECT\38.Apache6\1.CODE\1.BL\Testing\01_static\01_coding_rules\prqa\configs\Initial\output\SDC-b3a246649cb9f258b4f7
+D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SDC\Drv_SDC.c
+-op D:\1.PROJECT\38.Apache6\1.CODE\1.BL\Testing\01_static\01_coding_rules\prqa\configs\Initial\output\SCU-fd7cb36abe6243536f50
+D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\SCU\Drv_SCU.c
+-op D:\1.PROJECT\38.Apache6\1.CODE\1.BL\Testing\01_static\01_coding_rules\prqa\configs\Initial\output\OTP-2e514977c1b8019ca8f8
+D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\OTP\Drv_OTP.c
+-op D:\1.PROJECT\38.Apache6\1.CODE\1.BL\Testing\01_static\01_coding_rules\prqa\configs\Initial\output\ICU-0c292ce4c665fccceda1
+D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\ICU\Drv_ICU.c
+-op D:\1.PROJECT\38.Apache6\1.CODE\1.BL\Testing\01_static\01_coding_rules\prqa\configs\Initial\output\EMMC-4226de911c255a48d032
+D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\EMMC\Drv_EMMC.c
+-op D:\1.PROJECT\38.Apache6\1.CODE\1.BL\Testing\01_static\01_coding_rules\prqa\configs\Initial\output\DMA-01a67f51ffa2b6d9e005
+D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\driver\DMA\Drv_DMA330.c
+-op D:\1.PROJECT\38.Apache6\1.CODE\1.BL\Testing\01_static\01_coding_rules\prqa\configs\Initial\output\boot-b59f3435a5ce2e208934
+D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\boot\boot_UART.c
+D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\boot\boot_config.c
+D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\boot\boot_eMMC.c
+D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\boot\boot_SD.c
+D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\boot\boot_sFlash.c
+D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\boot\boot_USB.c
+D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\boot\load_IMG.c
+-op D:\1.PROJECT\38.Apache6\1.CODE\1.BL\Testing\01_static\01_coding_rules\prqa\configs\Initial\output\IOMUX-093a494413f20df5b9b6
+D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\bl1\IOMUX\IOMUX_EST.c
+-op D:\1.PROJECT\38.Apache6\1.CODE\1.BL\Testing\01_static\01_coding_rules\prqa\configs\Initial\output\bl1-76d26de8605030c7d1be
+D:\1.PROJECT\38.Apache6\1.CODE\1.BL\src\bl1\main.c

@@ -1,0 +1,5 @@
+-i "C:\codeSonar\code\apache6-bootloader\Testing\Static\prqa\configs\Initial\config\DATA\ARM_Clang_arm_arm_none_eabi_armclang_6.6.1_cortex_m3_C\Stub\forceinclude"
+-q "C:\codeSonar\code\apache6-bootloader\Testing\Static\prqa\configs\Initial\config\DATA\ARM_Clang_arm_arm_none_eabi_armclang_6.6.1_cortex_m3_C\Stub\forceinclude"
+-fi "C:\codeSonar\code\apache6-bootloader\Testing\Static\prqa\configs\Initial\config\DATA\ARM_Clang_arm_arm_none_eabi_armclang_6.6.1_cortex_m3_C\Stub\forceinclude\armclang_intrinsics.h"
+-fi "C:\codeSonar\code\apache6-bootloader\Testing\Static\prqa\configs\Initial\config\DATA\ARM_Clang_arm_arm_none_eabi_armclang_6.6.1_cortex_m3_C\Stub\forceinclude\armclang_predefined.h"
+-fi "C:\codeSonar\code\apache6-bootloader\Testing\Static\prqa\configs\Initial\config\DATA\ARM_Clang_arm_arm_none_eabi_armclang_6.6.1_cortex_m3_C\Stub\forceinclude\prlgcc.h"

@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<prqaproject xmlversion="3.0.0" qafversion="2.5.0">
+ <!-- Config file information... -->
+ <configurations>
+  <cosmetic_name name="APACHE6_BL1_SR_QAC"/>
+  <languageFamily name="C/C++"/>
+  <processMonitor>
+   <includeOptionSyntax>
+    <option string="-I"/>
+    <option string="/I"/>
+   </includeOptionSyntax>
+   <defineOptionSyntax>
+    <option string="-D"/>
+    <option string="/D"/>
+   </defineOptionSyntax>
+   <flagScript string=""/>
+   <settingsOptionSyntax>
+    <option compiler="Visual Studio" string="@" quotes_escaped="yes" extension=".rsp"/>
+    <option compiler="Windriver" string="-@" quotes_escaped="yes" extension=""/>
+    <option compiler="Greenhills" string="--Via" quotes_escaped="yes" extension="__i"/>
+   </settingsOptionSyntax>
+   <excludeStrings/>
+   <fileFilterStrings/>
+  </processMonitor>
+  <suppressIncludes active="no"/>
+  <exclusionPattern method="CSV"/>
+  <root_paths>
+   <root_path path="${PROJECT_ROOT}" name="SOURCE_ROOT"/>
+  </root_paths>
+  <default_config name="Initial"/>
+  <!-- Individual Configs... -->
+  <config name="Initial">
+   <baselinedSourceRoot baseline="OFF"/>
+   <baselineSnapshot id="" name="" date=""/>
+   <acf name="project.acf"/>
+   <rcf name="project.rcf"/>
+   <ccts>
+    <cct disable_cip="yes" target="C" active="yes" name="ARM_Clang_arm_arm_none_eabi_armclang_6.6.1_cortex_m3_C.cct" ignore_cip_error="yes"/>
+   </ccts>
+  </config>
+ </configurations>
+ <!-- Mapping of extension to target_language... -->
+ <file_extensions>
+  <language target="C">
+   <extension ext=".c"/>
+  </language>
+  <language target="C">
+   <extension ext=".C"/>
+  </language>
+  <language target="C++">
+   <extension ext=".cpp"/>
+  </language>
+  <language target="C++">
+   <extension ext=".cxx"/>
+  </language>
+  <language target="C++">
+   <extension ext=".cc"/>
+  </language>
+  <language target="C++">
+   <extension ext=".CPP"/>
+  </language>
+  <language target="C++">
+   <extension ext=".CXX"/>
+  </language>
+  <language target="C++">
+   <extension ext=".CC"/>
+  </language>
+ </file_extensions>
+  <!-- Files in project... -->
+ <files>
+  <!-- Explicit files... -->
+  <file target="C" name="seq_monitor.c" folder="../../src/safety/SM"/>
+  <file target="C" name="safety_engine.c" folder="../../src/safety/SE"/>
+  <file target="C" name="secure_boot.c" folder="../../src/safety/SB"/>
+  <file target="C" name="MPU.c" folder="../../src/safety/MPU"/>
+  <file target="C" name="rt640_hlos.c" folder="../../src/ncLib/SWC_Secure_RT640"/>
+  <file target="C" name="rt640_interface.c" folder="../../src/ncLib/SWC_Secure_RT640"/>
+  <file target="C" name="Drv_USB.c" folder="../../src/driver/USB"/>
+  <file target="C" name="Drv_USB_Core.c" folder="../../src/driver/USB"/>
+  <file target="C" name="Drv_USB_Descriptor.c" folder="../../src/driver/USB"/>
+  <file target="C" name="Drv_USB_Device.c" folder="../../src/driver/USB"/>
+  <file target="C" name="Drv_USB_Ep0.c" folder="../../src/driver/USB"/>
+  <file target="C" name="Drv_Uart.c" folder="../../src/driver/UART"/>
+  <file target="C" name="ymodem.c" folder="../../src/driver/UART"/>
+  <file target="C" name="Drv_SPI.c" folder="../../src/driver/SPI"/>
+  <file target="C" name="Svc_sFlash.c" folder="../../src/driver/SPI"/>
+  <file target="C" name="Drv_SDC.c" folder="../../src/driver/SDC"/>
+  <file target="C" name="Drv_SCU.c" folder="../../src/driver/SCU"/>
+  <file target="C" name="Drv_OTP.c" folder="../../src/driver/OTP"/>
+  <file target="C" name="Drv_ICU.c" folder="../../src/driver/ICU"/>
+  <file target="C" name="Drv_EMMC.c" folder="../../src/driver/EMMC"/>
+  <file target="C" name="Drv_DMA330.c" folder="../../src/driver/DMA"/>
+  <file target="C" name="boot_UART.c" folder="../../src/boot"/>
+  <file target="C" name="boot_config.c" folder="../../src/boot"/>
+  <file target="C" name="boot_eMMC.c" folder="../../src/boot"/>
+  <file target="C" name="boot_SD.c" folder="../../src/boot"/>
+  <file target="C" name="boot_sFlash.c" folder="../../src/boot"/>
+  <file target="C" name="boot_USB.c" folder="../../src/boot"/>
+  <file target="C" name="stdLib.c" folder="../../src/ncLib"/>
+  <file target="C" name="load_IMG.c" folder="../../src/boot"/>
+  <file target="C" name="IOMUX_EST.c" folder="../../src/bl1/IOMUX"/>
+  <file target="C" name="main.c" folder="../../src/bl1"/>
+ </files>
+</prqaproject>

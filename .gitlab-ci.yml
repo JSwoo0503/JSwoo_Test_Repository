@@ -1,0 +1,271 @@
+stages:
+  - Build
+  - Static_Verification
+  - Unit_Test
+  - Post_Report
+
+# Build (Linux Runner)
+build-job:
+  stage: Build
+  tags: ["Test_Linux_Job"]
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+
+  variables:
+    ARMLMD_LICENSE_FILE: "8224@192.168.20.46"   # Arm Compiler license
+
+  script:
+    - echo "Start Build..."
+    - make -C src
+
+# QAC (Windows Runner)
+qac-analyze:
+  stage: Static_Verification
+  tags: ["Test_Window_Job"]
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+
+  variables:
+    QACLI_EXE: "C:/Perforce/Helix-QAC-2019.1/common/bin/qacli.exe"
+
+  script:
+    - 'Write-Host "현재 경로 = $pwd"'
+    - 'Write-Host "QAC 실행 파일 = $env:QACLI_EXE"'
+
+    - '$ProjectDir = Join-Path $pwd "Test/Static_Verification"'
+    - 'Write-Host "QAC 프로젝트 디렉토리 = $ProjectDir"'
+
+    - '$env:PROJECT_ROOT = $pwd'
+    - 'Write-Host "PROJECT_ROOT = $env:PROJECT_ROOT"'
+
+    # 리포트 폴더 생성
+    - '$RULE_REPORT_DIR    = Join-Path $pwd ("QAC_Reports\" + $env:CI_COMMIT_SHORT_SHA + "\Coding_Rules")'
+    - '$METRICS_REPORT_DIR = Join-Path $pwd ("QAC_Reports\" + $env:CI_COMMIT_SHORT_SHA + "\Coding_metrics")'
+    - 'mkdir $RULE_REPORT_DIR -Force    | Out-Null'
+    - 'mkdir $METRICS_REPORT_DIR -Force | Out-Null'
+
+    # 라이선스 서버 지정
+    - '& $env:QACLI_EXE admin --set-license-server 5055@192.168.20.90'
+
+    # QAC Analyze 실행
+    - '& $env:QACLI_EXE analyze -cfs -P $ProjectDir -T'
+    - '$ret = $LASTEXITCODE'
+    - 'if ($ret -ne 0) { Write-Error "QAC Analyze failed with code $ret"; exit $ret }'
+
+    # 리포트 생성
+    - '& $env:QACLI_EXE report -t CRR -P $ProjectDir -o $RULE_REPORT_DIR'
+    - '& $env:QACLI_EXE report -t MDR -P $ProjectDir -o $RULE_REPORT_DIR'
+    - '& $env:QACLI_EXE report -t RCR -P $ProjectDir -o $RULE_REPORT_DIR'
+    - '& $env:QACLI_EXE report -t SUR -P $ProjectDir -o $RULE_REPORT_DIR'
+    - '& $env:QACLI_EXE report -t HMR -P $ProjectDir -o $METRICS_REPORT_DIR'
+    - '& $env:QACLI_EXE report -t EMR -P $ProjectDir -o $METRICS_REPORT_DIR'
+
+    # results_data.xml 찾기
+    - '$xmlFile = (Get-ChildItem $RULE_REPORT_DIR -Filter "results_data*.xml" | Select-Object -First 1).FullName'
+    - 'if (-not $xmlFile) { Write-Error "results_data.xml 파일을 찾을 수 없습니다"; exit 2 }'
+    - 'Write-Host "선택된 XML 파일 = $xmlFile"'
+
+    # 파이썬 파서 실행
+    - 'python Test/Static_Verification/parse_qac_reports.py "$xmlFile" "Test/Static_Verification/warnings_qac.csv"'
+    - 'python Test/Static_Verification/csv_to_html.py "Test/Static_Verification/warnings_qac.csv" "Test/Static_Verification/warnings_qac.html"'
+
+  artifacts:
+    when: always
+    paths:
+      - QAC_Reports/
+      - Test/Static_Verification/warnings_qac.csv
+      - Test/Static_Verification/warnings_qac.html
+    expire_in: 1 week
+
+# CodeSonar (Linux Runner)
+codesonar-analyze:
+  stage: Static_Verification
+  tags: ["Test_Linux_Job"]
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+
+  variables:
+    CODESONAR_EXE: "/home/woojaesung/codesonar/codesonar-9.0p0/codesonar/bin/codesonar"
+    CSPYTHON: "/home/woojaesung/codesonar/codesonar-9.0p0/codesonar/bin/cspython"
+    SARIF2SAST: "/home/woojaesung/codesonar/CodeSonarTools/codesonar-gitlab-integration/distro-image/codesonar-sarif2sast"
+    CODESONAR_PROJECT_NAME: "GitLabCI"
+    CODESONAR_HUBUSER: "codesonar1"
+    CODESONAR_HUBPWFILE: "$CI_PROJECT_DIR/Test/Static_Verification/pw.txt"
+    CODESONAR_HUB_URL: "http://192.168.20.94:7340"
+    CODESONAR_VISIBILITY_FILTER: "all"
+    ARMLMD_LICENSE_FILE: "8224@192.168.20.46"   # Arm Compiler license
+
+  script:
+    - "$CODESONAR_EXE analyze $CODESONAR_PROJECT_NAME \
+        -clean -foreground \
+        -preset 02_CS9.0_NextChip_ver2 \
+        -auth password -hubuser $CODESONAR_HUBUSER -hubpwfile $CODESONAR_HUBPWFILE \
+        $CODESONAR_HUB_URL \
+        make -C src"
+
+    - 'CODESONAR_ANALYSIS_ID=$($CSPYTHON $SARIF2SAST/analysis_id.py $CODESONAR_PROJECT_NAME)'
+    - 'echo "Analysis ID: $CODESONAR_ANALYSIS_ID"'
+
+    - "$CODESONAR_EXE get \
+        -auth password -hubuser $CODESONAR_HUBUSER -hubpwfile $CODESONAR_HUBPWFILE \
+        -o $CI_PROJECT_DIR/allwarnings.sarif \
+        $CODESONAR_HUB_URL/analysis/${CODESONAR_ANALYSIS_ID}-allwarnings.sarif?filter=%22$CODESONAR_VISIBILITY_FILTER%22"
+
+    - "python3 $CI_PROJECT_DIR/Test/Static_Verification/parse_codesonar_reports.py $CI_PROJECT_DIR/allwarnings.sarif $CI_PROJECT_DIR/Test/Static_Verification/warnings_codesonar.csv"
+    - "python3 $CI_PROJECT_DIR/Test/Static_Verification/csv_to_html.py $CI_PROJECT_DIR/Test/Static_Verification/warnings_codesonar.csv $CI_PROJECT_DIR/Test/Static_Verification/warnings_codesonar.html"
+
+  artifacts:
+    when: always
+    paths:
+      - GitLabCI.prj_files/
+      - allwarnings.sarif
+      - Test/Static_Verification/warnings_codesonar.csv
+      - Test/Static_Verification/warnings_codesonar.html
+    expire_in: 1 week
+
+# VectorCast
+.vectorcast-unittest:
+  stage: Unit_Test
+  tags: ["Test_Window_Job"]
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+
+  variables:
+    CLICAST: "C:/VCAST/clicast.exe"
+    VECTOR_LICENSE_FILE: "27000@192.168.20.39"
+    # 리포트 파일 (잡명 기반으로 분리 저장)
+    VCAST_REPORT_HTML: "Test/Test_Verification/${CI_JOB_NAME}_Report_Full.html"
+    VCAST_REPORT_XML: "Test/Test_Verification/${CI_JOB_NAME}_Report_Aggregate.xml"
+
+  before_script:
+    - 'chcp 65001 > $null'
+    - 'Write-Host "PWD = $pwd"'
+    - 'if (!(Test-Path "$env:CLICAST")) { Write-Error "clicast.exe not found: $env:CLICAST"; exit 2 }'
+    - 'Get-ChildItem -Recurse "Test/Test_Verification" | % FullName | Out-String | Write-Host'
+    # === Overwrite CCAST_.CFG with user config ===
+    - 'python "Test/Test_Verification/overwrite_CCASTcfg.py"'
+
+    # CCAST_User.CFG 파일의 C_PREPROCESS_CMD 항목에 armclang.exe 가 있는지 확인
+    - |
+      $cfg  = Get-Content -Raw "CCAST_.CFG"
+      $line = ($cfg -split "`r?`n") | ? { $_ -match '^\s*C_PREPROCESS_CMD\s*:' } | Select-Object -First 1
+      if (-not $line) { Write-Error "C_PREPROCESS_CMD not found in CCAST_.CFG"; exit 2 }
+      $cmd = ($line -split ":", 2)[1].Trim().Trim('"')
+      $ix  = $cmd.ToLower().IndexOf("armclang.exe")
+      if ($ix -lt 0) { Write-Error "armclang.exe token not found in C_PREPROCESS_CMD: $cmd"; exit 2 }
+      $arm = $cmd.Substring(0, $ix + "armclang.exe".Length).Trim('"',' ')
+      if (-not (Test-Path $arm)) { Write-Error "armclang.exe not found on runner: $arm"; exit 2 }
+      Write-Host "Using: $arm"
+
+  script:
+    - echo "=== File check ==="
+    - 'if (!(Test-Path "$env:VCAST_ENVBUILD")) { Write-Error "VCE not found: $env:VCAST_ENVBUILD"; exit 2 }'
+    - 'if (!(Test-Path "$env:CLICAST")) { Write-Error "clicast.exe not found: $env:CLICAST"; exit 2 }'
+    - 'if (!(Test-Path "$env:VCAST_TST")) { Write-Error "TST not found: $env:VCAST_TST"; exit 3 }'
+
+    - echo "=== Build VectorCAST Environment ==="
+    - '& $env:CLICAST -l c -e $env:VCAST_ENV ENvironment Build $env:VCAST_ENVBUILD'
+    - 'if ($LASTEXITCODE -ne 0) { Write-Error "VectorCAST Environment Build failed ($LASTEXITCODE)"; exit $LASTEXITCODE }'
+
+    # 테스트 + 리포트 + 종료코드(단일 블록)
+    - |
+      # 실패해도 다음 줄 계속 가도록 (네 Runner가 PS5.x라면 기본 값 그대로여도 OK, 명시해 둡니다)
+      $ErrorActionPreference = 'Continue'
+
+      Write-Host "=== Load Test Script (.tst) ==="
+      & $env:CLICAST -l c -e $env:VCAST_ENV TEst Script Run "$env:VCAST_TST"
+      $load_ec = $LASTEXITCODE
+      if ($load_ec -ne 0) { Write-Warning "TEst Script Run exited with $load_ec" }
+
+      # --- .tst 파싱 → Unit/Sub/Test 수집 ---
+      # .tst에 TEST.UNIT 없으면 사용. 프로젝트에 맞게 필요 시 수정.
+      $DefaultUnit = $null
+      if ($env:VCAST_DEFAULT_UNIT -and $env:VCAST_DEFAULT_UNIT.Trim() -ne "") {
+        $DefaultUnit = $env:VCAST_DEFAULT_UNIT.Trim()
+      }
+
+      $cases = @()
+      $currentSub = $null
+      Get-Content "$env:VCAST_TST" | ForEach-Object {
+        $line = $_.Trim()
+        if     ($line -match '^\s*TEST\.UNIT\s*:\s*(.+)$')       { $DefaultUnit = $matches[1].Trim() }
+        elseif ($line -match '^\s*TEST\.SUBPROGRAM\s*:\s*(.+)$') { $currentSub  = $matches[1].Trim() }
+        elseif ($line -match '^\s*TEST\.NAME\s*:\s*(.+)$') {
+          if (-not $currentSub) { return }
+          $cases += [pscustomobject]@{
+            Unit = $DefaultUnit
+            Sub  = $currentSub
+            Test = $matches[1].Trim()
+          }
+        }
+      }
+
+      if ($cases.Count -eq 0) { Write-Warning "No test cases parsed from $env:VCAST_TST" }
+
+      # --- 케이스별 실행 (-u/-s/-t 필수) ---
+      $fail = 0
+      foreach ($c in $cases) {
+        $u = $c.Unit.Trim()
+        $s = $c.Sub.Trim()
+        $t = $c.Test.Trim()
+        Write-Host "=== Execute: $u.$s :: $t ==="
+        & $env:CLICAST -l c -e $env:VCAST_ENV -u "$u" -s "$s" -t "$t" EXecute Run
+        if ($LASTEXITCODE -ne 0) { Write-Warning "FAILED ($LASTEXITCODE) -> $u.$s :: $t"; $fail++ }
+        else                     { Write-Host   "PASS                  -> $u.$s :: $t" }
+      }
+
+      # --- 리포트 생성(항상) ---
+      New-Item -ItemType Directory -Force -Path (Split-Path $env:VCAST_REPORT_HTML) | Out-Null
+      & $env:CLICAST -l c -e $env:VCAST_ENV REports Custom FULl          "$env:VCAST_REPORT_HTML"
+      & $env:CLICAST -l c -e $env:VCAST_ENV REports Custom Xml_aggregate "$env:VCAST_REPORT_XML"
+
+      # --- 최종 종료코드: 로드 실패 또는 하나라도 실패 시 1, 정상 종료 : 0---
+      if (($load_ec -ne 0) -or ($fail -gt 0)) { exit 1 } else { exit 0 }
+
+  artifacts:
+    when: always
+    paths:
+      - Test/Test_Verification/*Report_Full.html
+      - Test/Test_Verification/*Report_Aggregate.xml
+    expire_in: 1 week
+
+unit-drv-uart:
+  extends: .vectorcast-unittest
+  variables:
+    VCAST_ENV: "APACHE6_BL1_UNIT_UART"
+    VCAST_ENVBUILD: "Test/Test_Verification/ENV_DRV_UART.vce"
+    VCAST_TST: "Test/Test_Verification/TST/APACHE6_BL1_UNIT_UART.tst"
+    VCAST_DEFAULT_UNIT: "Drv_Uart"   # ← 여기서 기본 유닛명 주입
+
+unit-drv-icu:
+  extends: .vectorcast-unittest
+  variables:
+    VCAST_ENV: "APACHE6_BL1_UNIT_ICU"
+    VCAST_ENVBUILD: "Test/Test_Verification/ENV_DRV_ICU.vce"
+    VCAST_TST: "Test/Test_Verification/TST/APACHE6_BL1_UNIT_ICU.tst"
+    VCAST_DEFAULT_UNIT: "Drv_ICU"   # ← 여기서 기본 유닛명 주입
+
+
+# Merge Request에 HTML Report 링크 남기기
+post-report-links:
+  stage: Post_Report
+  tags: ["Test_Linux_Job"]
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+
+  script:
+    - REPORT_URL_QAC="$CI_PROJECT_URL/-/jobs/artifacts/$CI_COMMIT_REF_NAME/raw/Test/Static_Verification/warnings_qac.html?job=qac-analyze"
+    - REPORT_URL_CS="$CI_PROJECT_URL/-/jobs/artifacts/$CI_COMMIT_REF_NAME/raw/Test/Static_Verification/warnings_codesonar.html?job=codesonar-analyze"
+    - REPORT_URL_VC_UART="$CI_PROJECT_URL/-/jobs/artifacts/$CI_COMMIT_REF_NAME/raw/Test/Test_Verification/unit-drv-uart_Report_Full.html?job=unit-drv-uart"
+    - REPORT_URL_VC_ICU="$CI_PROJECT_URL/-/jobs/artifacts/$CI_COMMIT_REF_NAME/raw/Test/Test_Verification/unit-drv-icu_Report_Full.html?job=unit-drv-icu"
+
+    - |
+      curl --header "PRIVATE-TOKEN: $ACCESS_TOKEN" \
+           --data-urlencode "body=QAC Report: [Download HTML]($REPORT_URL_QAC)
+      CodeSonar Report: [Download HTML]($REPORT_URL_CS)
+      VectorCAST Report Drv_Uart: [Download HTML]($REPORT_URL_VC_UART)
+      VectorCAST Report Drv_ICU: [Download HTML]($REPORT_URL_VC_ICU)" \
+           "$CI_API_V4_URL/projects/$CI_PROJECT_ID/merge_requests/$CI_MERGE_REQUEST_IID/notes"
+  needs:
+    - qac-analyze
+    - codesonar-analyze

@@ -1,0 +1,173 @@
+;----------------------------------------------------------------------
+;JTAG Parameter Sart
+;
+SYSTEM.Down
+WAIT 10.ms
+
+OPTION.EnReset OFF
+OPTION.TRST OFF
+OPTION.ResBreak OFF
+OPTION.RegisterInit OFF
+OPTION.PCZero OFF
+
+SYSTEM.Up
+WAIT 10.ms
+
+SYSTEM.Down
+WAIT 10.ms
+
+;SYSTEM Setting
+OPTION.JTAGCLOCK 10.000000Mhz
+CPUTYPE CORTEXR5MPCore
+MULTICORE.COREBASE 0x80090000 0x80092000
+MULTICORE.COUNT 2
+core.assign 1. 2.
+
+OPTION.EnReset ON
+OPTION.TRST ON
+OPTION.ResBreak ON
+OPTION.RegisterInit ON
+OPTION.PCZero ON
+
+TrOnchip.Set DABORT OFF
+TrOnchip.Set PABORT OFF
+TrOnchip.Set SWI ON
+TrOnchip.Set UNDEF OFF
+TrOnchip.Set RESET OFF
+
+;Terminal Setting
+TermSet.TERM.METHOD None
+TermSet.TERM.Mode ASCII
+
+;Semihosting Setting
+;TermSet.TERM.METHOD SemiHosting
+;TermSet.SemiHost.Heapinfo 0x0007f000 0x00001000
+;TermSet.SemiHost.Stackinfo 0x0007f000 0x00001000
+
+OPTION SET END
+
+SYSTEM.Up
+WAIT 100.ms
+;
+;JTAG Parameter End
+;----------------------------------------------------------------------
+
+
+;----------------------------------------------------------------------
+; MPU Disable
+
+;PER.Set C15:0x1 %LONG 0x00E50878
+;----------------------------------------------------------------------
+
+
+;----------------------------------------------------------------------
+;  Boot Strap (Test Debug Register)
+;MWriteS32 0x080000F0 0x00000000 // JTAG Mode, Normal Boot Enable, OSC
+;MWriteS32 0x080000F0 0x00000008 // JTAG Mode, Secure Boot Enable, OSC
+;MWriteS32 0x080000F0 0x0000000B // Real Mdoe, Secure Boot Enable, PLL Max
+
+; Boot Strap (Test Debug Register)
+;----------------------------------------------------------------------
+
+Data.Set 0x01070000--0x010AFFFF %Long 0x00000000
+Data.Set 0x05C2C000--0x05C2C7FF %Long 0x00000000
+
+;----------------------------------------------------------------------
+; source path reset
+SourcePathReset
+SetDirSourcePath ..\..\bl1
+SetDirSourcePath ..\..\bl1\aarch32
+SetDirSourcePath ..\..\bl1\IOMUX
+SetDirSourcePath ..\..\boot
+SetDirSourcePath ..\..\driver
+SetDirSourcePath ..\..\ncLib
+SetDirSourcePath ..\..
+;----------------------------------------------------------------------
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;// FPGA DB : R_0801_R5_RT640_BOOT, // RT640_RESET ctrl: 0x0680_E008 [0]
+; OTP32K
+data.load.binary ..\..\tools\SecureBoot\SecureImgGen\tools\otpmem_mission_keysplit_3.bin 0x05C40000  // OTP32K // FPGA DB : R_0801_R5_RT640_BOOT
+data.load.binary ..\..\tools\SecureBoot\SecureImgGen\tools\sboot_indirect_os_location.img 0x05C40210 // OTP32K+0x210
+
+;// FPGA DB : R_0801_R5_RT640_BOOT
+;;;;;;;;;;;;;;;;;;;;;;
+;; Boot Config_2(UDF)
+;;;;;;;;;;;;;;;;;;;;;;
+MWriteS32 0x05C24244 0x00000000 // OTP2K : 0x05C24000+0x244 (UDF)
+
+;;;;;;;;;;;;;;;;;;;;;;
+;; Boot Config_1(BOOT_CFG)
+;;;;;;;;;;;;;;;;;;;;;;
+;; Secure Boot config
+MWriteS32 0x05C24240 0x00000520 // OTP2K : Used AES+DIGEST(Used AES+DIGEST in RT640 internal OTP). 0x05C24000+0x240 (BOOT_CFG)
+;MWriteS32 0x05C24240 0x00000920 // OTP2K : HMAC(Used HMAC KEY in SYS_OPT(2K)). 0x05C24000+0x240 (BOOT_CFG)
+;MWriteS32 0x05C24240 0x00000A20 // OTP2K : HMAC(Used Fixed HMAC KEY in ROM Code). 0x05C24000+0x240 (BOOT_CFG)
+;; Non-Secure Boot config
+;MWriteS32 0x05C24240 0x00000010 // OTP2K : 0x05C24000+0x240 (BOOT_CFG)
+
+;;; AES
+MWriteS32 0x05C24300 0x58561f46 // OTP2K : 0x05C24000+0x300 (AES)
+MWriteS32 0x05C24304 0x10eaee5c
+MWriteS32 0x05C24308 0x9c6dc577
+MWriteS32 0x05C2430C 0xc391d4bf
+MWriteS32 0x05C24310 0x2f2fc039
+MWriteS32 0x05C24314 0x33cf7b84
+MWriteS32 0x05C24318 0xb5851b82
+MWriteS32 0x05C2431C 0x04f57ded
+
+;;; Exclusive Define (DIGEST & MAC)
+;;; DIGEST
+MWriteS32 0x05C24320 0x0f857722 // OTP2K : 0x05C24000+0x320 (DIGEST)
+MWriteS32 0x05C24324 0xd73cd1ae
+MWriteS32 0x05C24328 0x2b7f84f6
+MWriteS32 0x05C2432C 0xcabc2c86
+MWriteS32 0x05C24330 0x6faf76c5
+MWriteS32 0x05C24334 0x47b5b497
+MWriteS32 0x05C24338 0x0af03f3d
+MWriteS32 0x05C2433C 0x3d624140
+
+MWriteS32 0x05075024 0x00000000 // DBG_STP1_REG (RegA6_SE->SE__DBG01.Reg)                  /* 2. Sequence Monitor Step1 Information */
+MWriteS32 0x05075028 0x00000000 // DBG_STP2_REG (RegA6_SE->SE__DBG02.Reg)                  /* 3. Sequence Monitor Step2 Information */
+MWriteS32 0x050750F0 0x00000000 // STATUS_SW_FAULT (RegA6_SE->SE__SW__SAFETY.Bit.ERR)
+MWriteS32 0x0C01F03C 0x00000000 // DBG_SUMMARY_REG
+MWriteS32 0x05075020 0x00000000 // DBG_VER_REG
+MWriteS32 0x0507502c 0x00000000 // DBG_SSTP_SRC_QSRC_REG
+MWriteS32 0x05075030 0x00000000 // DBG_BL_RES_REG
+MWriteS32 0x05075034 0x00000000 // DBG_STRAP_REG
+MWriteS32 0x05075038 0x00000000 // DBG_OTP_1_REG
+MWriteS32 0x0507503c 0x00000000 // DBG_FAULT_INFO_REG
+
+;;; Exclusive Define (MAC & DIGEST)
+;;; MAC
+;MWriteS32 0x05C24320 0xa4b37756 // OTP2K : 0x05C24000+0x320 (MAC)
+;MWriteS32 0x05C24324 0xa8831b48
+;MWriteS32 0x05C24328 0x9834e3a3
+;MWriteS32 0x05C2432C 0x59ad6e21
+;MWriteS32 0x05C24330 0x11d9a235
+;MWriteS32 0x05C24334 0xe36c9383
+;MWriteS32 0x05C24338 0x8a2617f8
+;MWriteS32 0x05C2433C 0xee5d817d
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;----------------------------------------------------------------------
+;Image Load Sart
+;
+
+core.select 0
+WAIT 100.ms
+LoadIMAGE ..\..\build\DebugRel_BL1\APACHE6_EVT0_BL1_aarch32.axf
+
+;LoadBINary ..\..\Utility\MakeBin\APACHE6_BL2_aarch32_AP60.bin 0x10002FF0        ;; 0x10003000 - 16(HEADER SIZE)
+
+;
+;Image Load End
+;----------------------------------------------------------------------
+
+
+WAIT 100.ms
+
+DebugList
+;d.dump 0x0680E008
+;d.dump 0x04400400
+;d.dump 0x05020000

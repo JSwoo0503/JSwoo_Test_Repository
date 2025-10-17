@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+ This file can be used to generate your own custom reports using an
+ xsl translation file or any other method you wish. It contains all active and total diagnostic counts for each 
+ folder, file, rule, message, component and level in the project.
+ It also contains links to files with additional data for each analyzed file.
+ NOTE: The format of this file may change in the next version.
+-->
+<AnalysisData timestamp="20250716T161735" projectpath="D:/1.PROJECT/38.Apache6/1.CODE/1.BL/Testing/01_static/01_coding_rules" reportpath="D:/1.PROJECT/38.Apache6/1.CODE/1.BL/Testing/01_static/01_coding_rules/prqa/configs/Initial/reports">
+  <dataroot type="project">
+    <tree type="files">
+      <Folder status="NoInfo" path="" total="0" active="0" basename="CMA" />
+    </tree>
+    <tree type="rules">
+    </tree>
+    <tree type="levels">
+    </tree>
+  </dataroot>
+  <dataroot type="per-file">
+  </dataroot>
+</AnalysisData>

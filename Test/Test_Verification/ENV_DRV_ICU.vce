@@ -1,0 +1,42 @@
+ENVIRO.NEW
+ENVIRO.NAME: APACHE6_BL1_UNIT_ICU
+
+# === 검색 경로 (repo root 기준) ===
+ENVIRO.SEARCH_LIST: .\src\bl1
+ENVIRO.SEARCH_LIST: .\src\bl1\IOMUX
+ENVIRO.SEARCH_LIST: .\src\bl1\aarch32
+ENVIRO.SEARCH_LIST: .\src\boot
+ENVIRO.SEARCH_LIST: .\src\driver\DMA
+ENVIRO.SEARCH_LIST: .\src\driver\EMMC
+ENVIRO.SEARCH_LIST: .\src\driver\ICU
+ENVIRO.SEARCH_LIST: .\src\driver\OTP
+ENVIRO.SEARCH_LIST: .\src\driver\REG_EVT0
+ENVIRO.SEARCH_LIST: .\src\driver\SCU
+ENVIRO.SEARCH_LIST: .\src\driver\SDC
+ENVIRO.SEARCH_LIST: .\src\driver\SPI
+ENVIRO.SEARCH_LIST: .\src\driver\UART
+ENVIRO.SEARCH_LIST: .\src\driver\USB
+ENVIRO.SEARCH_LIST: .\src\include
+ENVIRO.SEARCH_LIST: .\src\ncLib
+ENVIRO.SEARCH_LIST: .\src\ncLib\SWC_Secure_RT640
+ENVIRO.SEARCH_LIST: .\src\safety\SB
+ENVIRO.SEARCH_LIST: .\src\safety\SE
+ENVIRO.SEARCH_LIST: .\src\safety\SM
+ENVIRO.SEARCH_LIST: .\src\safety\MPU
+
+# === UUT 지정 (Unit Under Test) ===
+# 한 개의 UUT가 반드시 필요합니다. 필요 시 한 줄만 유지하고, 다른 유닛은 SEARCH_LIST에 의해 자동 탐색됩니다.
+ENVIRO.UUT: Drv_ICU
+
+# (선택) UART 유닛과 ymodem을 테스트에 쓰면 스텁 기준 설정
+ENVIRO.STUB_BY_FUNCTION:Drv_ICU
+ENVIRO.MAX_VARY_RANGE: 20
+ENVIRO.STUB: ALL_BY_PROTOTYPE
+ENVIRO.TYPE_HANDLED_DIRS_ALLOWED:
+ENVIRO.LIBRARY_STUBS:
+
+# === 커버리지/화이트박스 설정(필요 시) ===
+ENVIRO.COVERAGE_TYPE: STATEMENT+BRANCH
+ENVIRO.WHITE_BOX: YES
+
+ENVIRO.END

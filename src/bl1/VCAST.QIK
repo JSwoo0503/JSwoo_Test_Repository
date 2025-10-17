@@ -1,0 +1,37 @@
+--  QuickParse File Version: QP_DROP_CTOR_TESTABLE_INCLUDES  --
+HOME_DIRECTORY C:\GitLab-Runner\builds\bpnNgX6sR\0\jswoo0503\SW_ISO_26262\src\bl1
+BEGIN_RECORD main.c
+CHECKSUM 1018921072
+BLACKLIST FALSE
+DEFINED_OBJECTS
+   main
+CALLED_OBJECTS
+   NC_AXI2APB_TZPC_EN
+   NC_BootConfig
+   NC_Boot_SD
+   NC_Boot_UART
+   NC_Boot_UART_Initialize
+   NC_Boot_USB
+   NC_Boot_USB_Initialize
+   NC_Boot_eMMC
+   NC_Boot_sFlash
+   NC_Gpio_toggle
+   NC_ICU_Initialize
+   NC_InitReset
+   NC_LD_JumpImage
+   NC_MPU_EnterSafetyGate
+   NC_MPU_LeaveSafetyGate
+   NC_SCU_Initialize
+   NC_SE_Initialize
+   NC_SE_NotifyFailure
+   NC_SM_Initialize
+   NC_SM_SetBOOT_Result
+   NC_SYS_SCU_TZPROT_EN
+   NC_Secure_Boot
+STATIC_MEMBERS_DECLARED
+STATIC_MEMBERS_NEEDED
+GLOBAL_OBJECTS_NEEDED
+   RegA6_CPU_SCU
+   RegA6_SYS_SCU
+GLOBAL_OBJECTS_DEFINED
+END_RECORD main.c

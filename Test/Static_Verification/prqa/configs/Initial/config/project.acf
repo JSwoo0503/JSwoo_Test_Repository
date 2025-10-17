@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<acf xmlversion="2.0.0">
+  <components>
+    <component version="9.6.0" target="C" name="qac"/>
+    <component version="4.4.0" target="C++" name="qacpp"/>
+    <component version="2.0.0" target="C_CPP" name="rcma"/>
+    <component version="2.3.6" target="C" name="m3cm"/>
+  </components>
+  <component_settings>
+    <input_to version="9.6.0" target="C" component="qac">
+      <option argument="EVT=0" name="-d "/>
+      <option argument="BL1_" name="-d "/>
+      <option argument="BL_SEL=1" name="-d "/>
+      <option argument="USB_DLOAD_" name="-d "/>
+      <option argument="EST_MODE_" name="-d "/>
+      <option argument="SECURE_BOOT_" name="-d "/>
+      <option argument="OTP_ENABLE_" name="-d "/>
+      <option argument="CMRT_ENABLE_" name="-d "/>
+      <option argument="DFORCE_CMRT_OTP_CONFIG_" name="-d "/>
+      <option argument="IMG_CONFIG_1" name="-d "/>
+      <option argument="IMG_CONFIG_2" name="-d "/>
+      <option argument="BL_VER_MAJOR=1" name="-d "/>
+      <option argument="BL_VER_MINOR=0" name="-d "/>
+      <option argument="BL_VER_PATCH=5" name="-d "/>
+      <option argument="..\..\src\bl1\aarch32" name="-i "/>
+      <option argument="..\..\src\bl1" name="-i "/>
+      <option argument="..\..\src\include" name="-i "/>
+      <option argument="..\..\src\boot" name="-i "/>
+      <option argument="..\..\src\driver\REG_EVT0" name="-i "/>
+      <option argument="..\..\src\driver\ICU" name="-i "/>
+      <option argument="..\..\src\driver\SCU" name="-i "/>
+      <option argument="..\..\src\driver\UART" name="-i "/>
+      <option argument="..\..\src\driver\SPI" name="-i "/>
+      <option argument="..\..\src\driver\EMMC" name="-i "/>
+      <option argument="..\..\src\driver\SDC" name="-i "/>
+      <option argument="..\..\src\driver\DMA" name="-i "/>
+      <option argument="..\..\src\driver\USB" name="-i "/>
+      <option argument="..\..\src\driver\OTP" name="-i "/>
+      <option argument="..\..\src\safety\MPU" name="-i "/>
+      <option argument="..\..\src\safety\SE" name="-i "/>
+      <option argument="..\..\src\safety\SM" name="-i "/>
+      <option argument="..\..\src\safety\SB" name="-i "/>
+      <option argument="..\..\src\tools\Usb_FWDN" name="-i "/>
+      <option argument="..\..\src\ncLib" name="-i "/>
+    </input_to>
+  </component_settings>
+</acf>

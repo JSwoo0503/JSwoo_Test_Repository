@@ -1,0 +1,183 @@
+*{
+* "PLATFORM" : "PLATFORM_WIN64",
+* "COMPILER_HIERARCHY" : "ARM",
+* "COMPILER_NAME": "armclang",
+* "COMPILER_VERSION": "6.6.1",
+* "HOST": "cross",
+* "TARGET": "ARM Cortex-M3",
+* "SOURCE_LANGUAGE": "C",
+* "COMPILER_CMD": "armclang",
+* "ADDITIONAL_INCLUDES":"DATA/ARM_Clang_arm_arm_none_eabi_armclang_6.6.1_cortex_m3_C/Stub",
+* "INCLUDE_LIST": [
+*   {"INCLUDE_STRUCTURE": {
+*       "INCLUDE_TYPE": "MasterScript",
+*       "INCLUDE_VALUE": "DATA/ARM_Clang_arm_arm_none_eabi_armclang_6.6.1_cortex_m3_C/Script/armclang_C.py"
+*       }
+*   },
+*   {"INCLUDE_STRUCTURE": {
+*       "INCLUDE_TYPE": "HelperScript",
+*           "INCLUDE_VALUE": ""
+*       }
+*   }
+* ],
+* "SYNCHRONISATION" : {
+*   "INCLUDE_FLAGS":"",
+*   "DEFINE_FLAGS":"",
+*   "SETTINGS_FILE_OPTIONS":{
+*       "FLAG":"",
+*       "EXTENSION":"",
+*       "LITERAL_QUOTES":""
+*       }
+*   }
+*}
+
+* References
+* http://infocenter.arm.com/help/topic/com.arm.doc.dui0774h/DUI0774H_armclang_reference_guide.pdf
+
+*################################################
+* Fixed Settings (non-dependence to the targets)
+*################################################
+*************************************************
+* Size of type and alignment settings
+*************************************************
+*** 32bit/64bit common settings
+-s char=8
+-a char=1
+-s short=16
+-a short=2
+-s int=32
+-a int=4
+-s longlong=64
+-a longlong=8
+-s float=32
+-a float=4
+-s double=64
+-a double=8
+-s dataptr=32
+-a dataptr=4
+-s codeptr=32
+-a codeptr=4
+-ex longlong
+
+*************************************************
+* Setting complier-specific keywords
+*************************************************
+-d "_PRL_STRINGIFY(x)=#x"
+-D"__asm__=asm"
+-D"__asm=asm"
+-ex asm
+-D"__declspec=_ignore_paren"
+-D"__inline=inline"
+-D"__inline__=inline"
+-D"__unaligned="
+-D"__attribute__=_ignore_paren"
+-spragma "clang*"
+-spragma "pack*"
+-spragma "unroll*"
+-spragma "weak*"
+
+*************************************************
+* Settings for shift operation, sign of type and characters
+*************************************************
+-ar+
+-bits+
+-sl+
+-na 31
+-xn 31
+-xc-
+
+
+*################################################
+* Non fixed settings (depend on target or installation conditions)
+*################################################
+
+*************************************************
+* Set standard include paths
+* extract from armclang --target=value  -mcpu=value  -c -v dummy.c
+*************************************************
+-I"C:\Program Files\ARMCompiler6.7.1\bin\..\include"
+
+*************************************************
+* Size of type and alignment settings
+*************************************************
+*** When the target is 32bit architecture,  release below 4 comments
+*-s long=32
+*-a long=4
+*-s ldouble=64
+*-a ldouble=8
+
+*** When the target is 64bit architecture,  release below 4 comments
+*-s long=64
+*-a long=8
+*-s ldouble=128
+*-a ldouble=16
+
+*************************************************
+* Settings for plain char
+*************************************************
+*** For unsigned plain char (default setting), release below 3 comments
+-u+
+-fpc-
+-D"__CHAR_UNSIGNED__=1"
+
+*** For signed plain char, release below 2 comments
+-u-
+-fpc+
+
+*************************************************
+* Settings for implementation defined types
+*************************************************
+*** match with the value of #define __SIZE_TYPE__
+-it "size_t=unsigned int"
+-D"__SIZE_TYPE__=unsigned int"
+
+*** match with the value of #define __PTRDIFF_TYPE__
+-it "ptrdiff_t=int"
+-D"__PTRDIFF_TYPE__=int"
+
+*** match with the value of #define __WCHAR_TYPE__
+*** wchar_t shall be affected by  -fshort-wchar and -fno-short-wchar
+-it "wchar_t=unsigned int"
+-D"__WCHAR_TYPE__=unsigned int"
+
+*************************************************
+* Setting option-dependent predefined macros
+*************************************************
+* When -fropi option is used, release below comment
+* -D"__APCS_ROPI=1"
+
+* When -frwpi option is used, release below comment
+* -D"__APCS_RWPI=1"
+
+* When -ffast-math option is used, release below comment
+* -D"__ARM_FP_FAST=1"
+
+* When -mfloat-abi=hard option is used in 32bit architecture, release below comment
+* -D"__ARM_PCS_VFP=1"
+
+* When -fno-short-enumsoption is used, or -fshort-enums option is NOT used, release below comment
+* -D"__ARM_SIZEOF_MINIMAL_ENUM=4"
+
+* When -fshort-enums option is used, release below comment
+* -D"__ARM_SIZEOF_MINIMAL_ENUM=1"
+
+* When  -fno-short-wcharoption is used, or -fshort-wchar option is NOT used, release below comment
+* -D"__ARM_SIZEOF_WCHAR_T=4"
+
+* When -fshort-wchar option is used, release below comment
+* -D"__ARM_SIZEOF_WCHAR_T=2"
+
+* When -fno-inline option or -O0option is used, or -O option is NOT used, release below comment
+* -D"__NO_INLINE__=1"
+
+* When one of -O1,-O2,-O3,-Ofast,-Oz or -Os options is used, release below comment
+* -D"__OPTIMIZE__=1"
+
+* When either -Os or -Oz option is used, release below comment
+* -D"__OPTIMIZE_SIZE__=1"
+
+* When--ansi or  --std=c*option is used, release below comment
+*-D"__STRICT_ANSI__=1"
+
+* When -mthumb option is used, release below comment
+* -D"__thumb__=1"

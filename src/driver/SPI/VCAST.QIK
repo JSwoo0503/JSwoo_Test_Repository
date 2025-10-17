@@ -1,0 +1,79 @@
+--  QuickParse File Version: QP_DROP_CTOR_TESTABLE_INCLUDES  --
+HOME_DIRECTORY C:\GitLab-Runner\builds\bpnNgX6sR\0\jswoo0503\SW_ISO_26262\src\driver\SPI
+BEGIN_RECORD Drv_SPI.c
+CHECKSUM 986857085
+BLACKLIST FALSE
+DEFINED_OBJECTS
+   NC_QSPI_Init
+   NC_QSPI_Read
+   NC_QSPI_SetBitRate
+   NC_QSPI_Write
+   NC_SPI_DeInit
+   NC_SPI_DisableCS
+   NC_SPI_DisableDMAReq
+   NC_SPI_EnableCS
+   NC_SPI_EnableDMAReq
+   NC_SPI_Init
+   NC_SPI_Read
+   NC_SPI_SetBitRate
+   NC_SPI_SetDataLevel
+   NC_SPI_SetFrameSize
+   NC_SPI_SetTMOD
+   NC_SPI_SetTransferLength
+   NC_SPI_WaitBusIsBusy
+   NC_SPI_WaitTxFIFOIsEmpty
+   NC_SPI_Write
+   NC_SPI_Write32
+   NC_SPI_WriteDummy
+CALLED_OBJECTS
+   NC_SCU_mTimeOut
+STATIC_MEMBERS_DECLARED
+STATIC_MEMBERS_NEEDED
+GLOBAL_OBJECTS_NEEDED
+   RegA6_CPU_SCU
+GLOBAL_OBJECTS_DEFINED
+   RegA6_QSPI
+END_RECORD Drv_SPI.c
+BEGIN_RECORD Svc_sFlash.c
+CHECKSUM 567339286
+BLACKLIST FALSE
+DEFINED_OBJECTS
+   NC_SF_DMA_QSPI_ReadData
+   NC_SF_DMA_SPI_ReadData
+   NC_SF_DeInit
+   NC_SF_EnableDeviceQuadMode
+   NC_SF_Init
+   NC_SF_QSPI_ReadData
+   NC_SF_ReadData
+   NC_SF_ReadID
+   NC_SF_SPI_ReadData
+CALLED_OBJECTS
+   ASM_DCACHE_FLUSH
+   NC_DMA_Deinit
+   NC_DMA_QSPI_Gen_Instruction
+   NC_DMA_SPI_Gen_Instruction
+   NC_DMA_Start
+   NC_DMA_Wait_Complete
+   NC_QSPI_Read
+   NC_QSPI_Write
+   NC_SCU_WaitTick
+   NC_SCU_mTimeOut
+   NC_SPI_DeInit
+   NC_SPI_DisableCS
+   NC_SPI_DisableDMAReq
+   NC_SPI_EnableCS
+   NC_SPI_EnableDMAReq
+   NC_SPI_Init
+   NC_SPI_Read
+   NC_SPI_SetDataLevel
+   NC_SPI_SetFrameSize
+   NC_SPI_SetTMOD
+   NC_SPI_SetTransferLength
+   NC_SPI_Write
+   NC_SPI_Write32
+   NC_SPI_WriteDummy
+STATIC_MEMBERS_DECLARED
+STATIC_MEMBERS_NEEDED
+GLOBAL_OBJECTS_NEEDED
+GLOBAL_OBJECTS_DEFINED
+END_RECORD Svc_sFlash.c

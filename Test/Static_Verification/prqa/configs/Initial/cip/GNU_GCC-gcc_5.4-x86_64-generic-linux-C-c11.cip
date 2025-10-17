@@ -1,0 +1,22 @@
+-i "C:\codeSonar\code\apache6-bootloader\Testing\Static\prqa\configs\Initial\config\DATA\GNU_GCC-gcc\Stub\gcc"
+-q "C:\codeSonar\code\apache6-bootloader\Testing\Static\prqa\configs\Initial\config\DATA\GNU_GCC-gcc\Stub\gcc"
+-q "C:\codeSonar\code\apache6-bootloader\Testing\Static\prqa\configs\Initial\config\DATA\GNU_GCC-gcc\Stub\prlforceinclude"
+-fi "C:\codeSonar\code\apache6-bootloader\Testing\Static\prqa\configs\Initial\config\DATA\GNU_GCC-gcc\Stub\prlforceinclude\045_prlgcc.h"
+-fi "C:\codeSonar\code\apache6-bootloader\Testing\Static\prqa\configs\Initial\config\DATA\GNU_GCC-gcc\Stub\prlforceinclude\150_builtins_all.h"
+-i "c:\msys64\ucrt64\bin\..\lib\gcc\x86_64-w64-mingw32\14.2.0\include"
+-q  "c:\msys64\ucrt64\bin\..\lib\gcc\x86_64-w64-mingw32\14.2.0\include"
+-i "c:\msys64\ucrt64\bin\..\lib\gcc\x86_64-w64-mingw32\14.2.0\..\..\..\..\include"
+-q  "c:\msys64\ucrt64\bin\..\lib\gcc\x86_64-w64-mingw32\14.2.0\..\..\..\..\include"
+-i "c:\msys64\ucrt64\bin\..\lib\gcc\x86_64-w64-mingw32\14.2.0\include-fixed"
+-q  "c:\msys64\ucrt64\bin\..\lib\gcc\x86_64-w64-mingw32\14.2.0\include-fixed"
+
+* The detected __VERSION__ string.
+-d "__VERSION__=_PRL_STRINGIFY(14.2.0)"
+
+* The detected __GNUC_PATCHLEVEL__.
+-d "__GNUC_PATCHLEVEL__=0"
+
+* The reported compiler version.
+-d "__PRL_GNUC__=14"
+-d "__PRL_GNUC_PATCHLEVEL__=0"
+-d "__PRL_GNUC_MINOR__=2"

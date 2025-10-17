@@ -1,0 +1,106 @@
+;;/**
+;;******************************************************************************
+;;*
+;;*  Copyright (C) 2022 NEXTCHIP Inc. All rights reserved.
+;;*
+;;*  @file      : BL1_Linker.scat
+;;*
+;;*  @brief     : This file is implemented about linker of Apache6 boot rom (BL1)
+;;*
+;;*  @author    :
+;;*
+;;*  @date      :
+;;*
+;;*  @version   :
+;;*
+;;******************************************************************************
+;;*  @note      : ROM(64KB), SRAM(896KB = 704KB + 192KB), Useable SRAM(704KB = 448KB + 256KB)
+;;*
+;;*  0x010D_FFFF ----------SRAM Region (192KB)---------------
+;;*              |
+;;*              | VISION_BLK0/1 Bootup T-Memory for ISP
+;;*              |
+;;*  0x010A_FFFF ----------SRAM Region (704KB)--------------- (0x10B0000)
+;;*              | SBOOT_OTP_BASE(256Byte)
+;;*              | BOOT_DMA_INST(512Byte)
+;;*              | BL1 ZI(143KB)
+;;*              | BL1 USER_STACK(96KB)
+;;*              | BL1 FAULT_STACK(16KB)
+;;*              |
+;;*  0x0107_0000 ----------SRAM Region (448KB)---------------
+;;*              |
+;;*              | BL2 Loading Area
+;;*              |
+;;*  0x0100_0000 --------------------------------------------
+;;*              | N/A
+;;*  0x0001_0000 ----------ROM Region (64KB)-----------------
+;;*              |
+;;*              | BL1 Startup & RO
+;;*              |
+;;*  0x0000_0000 --------------------------------------------
+;;******************************************************************************
+;;*  @note SRAM Region (192KB) will be used for VISION_BLK0/1 Bootup T-Memory for ISP.
+;;*
+;;*
+;;******************************************************************************
+;;*/
+
+
+LOAD_REGION 0x00000000 0x00010000
+{
+  STARTUP +0
+  {
+    startup.o (Startup, +FIRST)
+  }
+
+  ER_RO +0
+  {
+    * (+RO)
+  }
+
+  DEBUG_DATA_SECTION +0 ALIGN 0x80
+  {
+    *(.dbg_data_section)
+  }
+
+  DEBUG_SECTION +0 ALIGN 0x4000
+  {
+    *(.dbg_section)
+  }
+
+  SAFETY_ENGINE_TXT +0 ALIGN 0x1000
+  {
+    safety_engine.o (.text, +FIRST)
+  }
+}
+
+
+LOAD_REGION_1 0x01070000 0x00040000
+{
+  ;; FAULT Stack - 16KB (for Safety)
+  FAULT_STACK +0 EMPTY 0x4000
+  {
+  }
+
+  ;; User stack - 96KB
+  USER_STACK +0 EMPTY 0x18000
+  {
+  }
+
+  ER_ZI +0
+  {
+    * (+ZI)
+  }
+
+  ;; BOOT_DMA_INST Area
+  BOOT_DMA_INST 0x10AFD00 EMPTY 0x200
+  {
+  }
+
+  ;; Reserved Area
+  BOOT_RESERVED 0x010AFF00 EMPTY 0x100
+  {
+  }
+}
+
+; end of file scatter.scat
