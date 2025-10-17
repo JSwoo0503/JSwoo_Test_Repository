@@ -1,0 +1,220 @@
+{
+  "main": {
+    "id": "e4185188c5a3944b",
+    "type": "split",
+    "children": [
+      {
+        "id": "977ca060019beb65",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2661c5edcd3fa779",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Apache6_SDK_Sublist/Code/mini-v2 Branch.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "mini-v2 Branch"
+            }
+          },
+          {
+            "id": "84fbc47edf349797",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Apache6_SDK_Sublist/Code/QNX develop.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "QNX develop"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a06757b2553da6ed",
+    "type": "split",
+    "children": [
+      {
+        "id": "c397e779d2f5586c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "505706a553bfb7f7",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "파일 탐색기"
+            }
+          },
+          {
+            "id": "1761e0a0b7a34c02",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "검색"
+            }
+          },
+          {
+            "id": "4d2873e09f65ae1a",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "북마크"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "cf63647afe9e81c3",
+    "type": "split",
+    "children": [
+      {
+        "id": "59de978b5b12fe45",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f4a059f114aa7d5d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "백링크"
+            }
+          },
+          {
+            "id": "d5796c2a8d814813",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "나가는 링크"
+            }
+          },
+          {
+            "id": "e5747e996584a845",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "태그"
+            }
+          },
+          {
+            "id": "9465fff9ebdf7673",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "개요"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:빠른 전환기 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 일일 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false,
+      "bases:새 베이스 생성하기": false
+    }
+  },
+  "active": "84fbc47edf349797",
+  "lastOpenFiles": [
+    "Apache6.md",
+    "Apache6_SDK_Sublist/Code/QNX develop.md",
+    "Apache6_SDK_Sublist/Code/QNX Remote Build 환경 설정.md",
+    "Apache6_SDK_Sublist/DOC/NVS3000_Linux_SDK HW Features.md",
+    "Apache6_SDK_Sublist/DOC/Flash Memoty Map.md",
+    "Apache6_SDK_Sublist/Images/Flash Memory Map.png",
+    "Apache6_SDK_Sublist/Images/NVS3000 Overview.png",
+    "Apache6_SDK_Sublist/Images",
+    "Apache6_SDK_Sublist/Code/mini-v2 Branch.md",
+    "Apache6_SDK_Sublist/DOC",
+    "Apache6_SDK_Sublist/Code",
+    "Apache6_26262_Sublist/ISO26262 Apache6 SDK.md",
+    "Apache6_26262_Sublist/26262_Sublist",
+    "Apache6_26262_Sublist/26262_Sublist/Safety Mechanism 계획.md",
+    "Apache6_26262_Sublist/26262_Sublist/SW SDK에 적용 할 시스템 문서 검토.md",
+    "Apache6_26262_Sublist/26262_Sublist/SW ISO26262 작성 문서 List.md",
+    "NVS3000_l.md",
+    "Apache6_SDK_Sublist",
+    "Apache6_26262_Sublist/26262_Sublist/Apache6_SDK_시스템 요구 사항 명세서/Timer 이중화 설계.md",
+    "Apache6_26262_Sublist/26262_Sublist/Apache6_SDK_시스템 요구 사항 명세서/Alive Check.md",
+    "Apache6_26262_Sublist/26262_Sublist/Apache6_SDK_시스템 요구 사항 명세서/Memory Protection.md",
+    "Apache6_26262_Sublist/26262_Sublist/Apache6_SDK_시스템 요구 사항 명세서/DDR Memory Access Protection.md",
+    "Apache6_26262_Sublist/26262_Sublist/Apache6_SDK_시스템 요구 사항 명세서/Communication data integrity check.md",
+    "Apache6_26262_Sublist/26262_Sublist/Apache6_SDK_시스템 요구 사항 명세서/External Temperature Monitoring.md",
+    "Apache6_26262_Sublist/26262_Sublist/Apache6_SDK_시스템 요구 사항 명세서/Internal Voltage Monitoring.md",
+    "Apache6_26262_Sublist/26262_Sublist/Apache6_SDK_시스템 요구 사항 명세서/Flash memory signature.md",
+    "Apache6_26262_Sublist/26262_Sublist/Apache6_SDK_시스템 요구 사항 명세서/External Watchdog Timer.md",
+    "Apache6_26262_Sublist/26262_Sublist/Apache6_SDK_시스템 요구 사항 명세서/Internal Temperature Monitoring.md",
+    "Apache6_26262_Sublist/26262_Sublist/Apache6_SDK_시스템 요구 사항 명세서/SW Input Range Checker.md",
+    "Apache6_26262_Sublist/26262_Sublist/Apache6_SDK_시스템 요구 사항 명세서/Fault 출력 이중화.md",
+    "Apache6_26262_Sublist/26262_Sublist/Apache6_SDK_시스템 요구 사항 명세서/External Device Time-Out check.md",
+    "Apache6_26262_Sublist/26262_Sublist/Apache6_SDK_시스템 요구 사항 명세서/External Device Read-back Test.md",
+    "Apache6_26262_Sublist/26262_Sublist/Apache6_SDK_시스템 요구 사항 명세서/SW Task Time Monitoring.md"
+  ]
+}
